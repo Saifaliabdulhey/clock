@@ -29,28 +29,3 @@ function setColor(){
 }
 setInterval(setColor,100);
 
-function add(){
-    var li = document.createElement("LI");
-    var input = document.getElementById("input").value;
-    var text = document.createTextNode(input);
-    li.appendChild(text);
-
-    document.getElementById("myList").appendChild(li);
-}
-
-
-var music = document.getElementById("music");
-
-var play = document.getElementById("play");
-var pause = document.getElementById("pause");
-var update = document.getElementById("update");
-
-play.addEventListener("click",()=>{
-    music.play();
-})
-pause.addEventListener("click",()=>{
-    music.pause();
-})
-update.addEventListener("click",()=>{
-    music.update();
-})
